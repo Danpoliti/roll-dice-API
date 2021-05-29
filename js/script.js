@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Ready!");
     document.getElementById("btn-roll").addEventListener("click", rollDice)
   
-    // const title = getDice();
+  
     const diceNumber = document.getElementById("random-number");
     const rollMessage = document.getElementById("message");
   

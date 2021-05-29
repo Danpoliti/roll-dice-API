@@ -1,0 +1,23 @@
+html {
+    text-align: center;
+    vertical-align: middle;
+    height: 600px;
+    
+}
+
+body {
+    /* display: inline-block; */
+    height: 100%;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.label-number {
+    padding: 3em;
+    font-size: 2em;
+}

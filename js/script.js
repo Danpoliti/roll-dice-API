@@ -14,34 +14,36 @@ document.addEventListener("DOMContentLoaded", function () {
           "x-rapidapi-host": "roll-dice1.p.rapidapi.com"
         }
       })
+      
         .then((response) => response.json())
         .then((response) => {
           console.log(response.data);
           diceNumber.innerHTML = response.data.Dice;
           if (response.data.Dice === 2) {
-          var imageshown = "img/inverted-dice-2.svg"
-          document.getElementById("img").src = imageshown;
-          } else if (response.data.Dice === 1){
-            var imageshown = "img/inverted-dice-1.svg"
+            var imageshown = "img/inverted-dice-2.svg"
             document.getElementById("img").src = imageshown;
-          } else if (response.data.Dice === 3){
-            var imageshown = "img/inverted-dice-3.svg"
-            document.getElementById("img").src = imageshown;
-          } else if (response.data.Dice === 4){
-            var imageshown = "img/inverted-dice-4.svg"
-            document.getElementById("img").src = imageshown;
-          } else if (response.data.Dice === 5){
-            var imageshown = "img/inverted-dice-5.svg"
-            document.getElementById("img").src = imageshown;
-          } else if (response.data.Dice === 6){
-            var imageshown = "img/inverted-dice-6.svg"
-            document.getElementById("img").src = imageshown;
-          }
+            } else if (response.data.Dice === 1){
+              var imageshown = "img/inverted-dice-1.svg"
+              document.getElementById("img").src = imageshown;
+            } else if (response.data.Dice === 3){
+              var imageshown = "img/inverted-dice-3.svg"
+              document.getElementById("img").src = imageshown;
+            } else if (response.data.Dice === 4){
+              var imageshown = "img/inverted-dice-4.svg"
+              document.getElementById("img").src = imageshown;
+            } else if (response.data.Dice === 5){
+              var imageshown = "img/inverted-dice-5.svg"
+              document.getElementById("img").src = imageshown;
+            } else if (response.data.Dice === 6){
+              var imageshown = "img/inverted-dice-6.svg"
+              document.getElementById("img").src = imageshown;
+            }
           rollMessage.innerHTML = response.data.talk;
         })
         .catch((err) => {
           console.error(err);
         });
+        
     }
   
     rollDice();

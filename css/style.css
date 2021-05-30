@@ -88,7 +88,7 @@ img {
      transition: 0.5s;
      background-size: 200% auto;
      color: rgb(236, 235, 235);            
-     box-shadow: 0 0 20px #eee;
+     box-shadow: 0 0 6px rgb(95, 7, 7);
      border:12px solid crimson;
      border-radius: 50%;
      display: block;

@@ -43,10 +43,12 @@ div {
 }
 
 img {
+  display: block;
     grid-area: dice-img;
     width: 400px;
     /* border-radius: 50%; */
     margin-right: auto;
+    box-shadow: 1px 1px 1px 2px black;
 }
 .slogan {
   

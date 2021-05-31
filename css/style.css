@@ -1,111 +1,99 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
-html, body{
+html, body {
   height: 100%;
 }
 
-
 html {
-    text-align: center;
-    vertical-align: middle;
-    /* height: 600px; */
-    max-width: 1400px;
-    margin: auto;
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
 }
 
 body {
-    /* display: inline-block; */
-    height: 100%;
-    background-color: azure;
+  background-color: azure;
+  height: 100%;
 }
+
 div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "button-dice dice-img"
-    "message message";
-    /* flex-direction: column; */
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "button-dice dice-img" "message message";
+  height: 100%;
+  justify-content: space-between;
 }
 
 .label-number {
- 
-    /* padding: 3em; */
-    margin: auto;
-    padding: 0.5em;
-    font-size: 3em;
-    height: 1em;
-    border: 15px solid lightblue;
-    border-radius: 50%;
-    display: none;
+  border: 15px solid lightblue;
+  border-radius: 50%;
+  display: none;
+  font-size: 3em;
+  height: 1em;
+  margin: auto;
+  padding: 0.5em;
 }
 
 img {
+  box-shadow: 1px 1px 1px 2px black;
   display: block;
-    grid-area: dice-img;
-    width: 400px;
-    /* border-radius: 50%; */
-    margin-right: auto;
-    box-shadow: 1px 1px 1px 2px black;
+  grid-area: dice-img;
+  margin-right: auto;
+  width: 400px;
 }
+
 .slogan {
-  
-    background-image: linear-gradient(45deg,purple,red,tomato,tomato,red, purple);
-    color: gold;
-    font-family: 'Stalinist One', cursive;
-    font-weight: 400;
-    font-size: 3em;
-    font-family: 'Stalinist One', Impact, sans-serif;
-    line-height: 1;
-    text-align: center;
-    text-shadow: 
-      0.16rem 0.16rem brown,
-      0.32rem 0.32rem red,
-      0.34rem 0.34rem orange,
-      0.36rem 0.36rem salmon;
-  box-shadow: 0.16rem 0.16rem 	orange;
-      text-transform: uppercase;
-    letter-spacing: -0.4rem;
-    border-radius: 50px;
-  }
+  background-image: linear-gradient(45deg, purple, red, tomato, tomato, red, purple);
+  box-shadow: 0.16rem 0.16rem orange;
+  border-radius: 50px;
+  color: gold;
+  font-family: 'Stalinist One', cursive;
+  font-weight: 400;
+  font-size: 3em;
+  font-family: 'Stalinist One', Impact, sans-serif;
+  letter-spacing: -0.4rem;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0.16rem 0.16rem brown, 0.32rem 0.32rem red, 0.34rem 0.34rem orange, 0.36rem 0.36rem salmon;
+  text-transform: uppercase;
+}
 
+.message {
+  background-image: linear-gradient(45deg, purple, red, tomato, tomato, red, purple);
+  border-radius: 50px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 5em;
+  grid-area: message;
+  opacity: 80%;
+  text-shadow: 1px 3px black;
+}
 
-  .message {
-      grid-area: message;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 5em;
-      color: white;
-      text-shadow: 1px 3px black;
-      background-image: linear-gradient(45deg,purple,red,tomato,tomato,red, purple);
-      opacity: 80%;
-      border-radius: 50px;
-  }
+#btn-roll {
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%)
+}
 
-  
-  #btn-roll {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
-  #btn-roll {
-      font-size: 1.5em;
-      font-family:Georgia, 'Times New Roman', Times, serif;
-      font-weight: bold;
-      text-shadow: rgb(109, 2, 2) 1px 1px;
-    margin: auto;
-     padding: 2.5em 2em;
-     text-align: center;
-     text-transform: uppercase;
-     transition: 0.5s;
-     background-size: 200% auto;
-     color: rgb(236, 235, 235);            
-     box-shadow: 0 0 6px rgb(95, 7, 7);
-     border:12px solid crimson;
-     border-radius: 50%;
-     display: block;
-   }
+#btn-roll {
+  border: 12px solid crimson;
+  background-size: 200% auto;
+  box-shadow: 0 0 6px rgb(95, 7, 7);
+  border-radius: 50%;
+  color: rgb(236, 235, 235);
+  display: block;
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin: auto;
+  padding: 2.5em 2em;
+  text-shadow: rgb(109, 2, 2) 1px 1px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
 
-   #btn-roll:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
-  
+#btn-roll:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

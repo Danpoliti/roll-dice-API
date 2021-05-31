@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const diceNumber = document.getElementById("random-number");
   const rollMessage = document.getElementById("message");
 
+  // Function to roll the dice and decide which IMG to use according to the dice number
   function rollDice() {
+    // Roll Dice API
     fetch("https://roll-dice1.p.rapidapi.com/rollDice", {
       "method": "GET",
       "headers": {

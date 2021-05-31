@@ -14,6 +14,14 @@ body {
   background-color: azure;
   height: 100%;
 }
+/* Dice IMG formatting */
+img {
+  box-shadow: 1px 1px 1px 2px black;
+  display: block;
+  grid-area: dice-img;
+  margin-right: auto;
+  width: 400px;
+}
 
 div {
   align-items: center;
@@ -23,8 +31,8 @@ div {
   height: 100%;
   justify-content: space-between;
 }
-
-.label-number {
+/* Previous style to the number dysplayed HIDDEN LABEL */
+/* .label-number {
   border: 15px solid lightblue;
   border-radius: 50%;
   display: none;
@@ -32,16 +40,9 @@ div {
   height: 1em;
   margin: auto;
   padding: 0.5em;
-}
+} */
 
-img {
-  box-shadow: 1px 1px 1px 2px black;
-  display: block;
-  grid-area: dice-img;
-  margin-right: auto;
-  width: 400px;
-}
-
+/* Top banner */
 .slogan {
   background-image: linear-gradient(45deg, purple, red, tomato, tomato, red, purple);
   box-shadow: 0.16rem 0.16rem orange;
@@ -57,7 +58,7 @@ img {
   text-shadow: 0.16rem 0.16rem brown, 0.32rem 0.32rem red, 0.34rem 0.34rem orange, 0.36rem 0.36rem salmon;
   text-transform: uppercase;
 }
-
+/* Dice message style */
 .message {
   background-image: linear-gradient(45deg, purple, red, tomato, tomato, red, purple);
   border-radius: 50px;
@@ -72,7 +73,7 @@ img {
 #btn-roll {
   background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%)
 }
-
+/* Roll Dice button style */
 #btn-roll {
   border: 12px solid crimson;
   background-size: 200% auto;
@@ -90,7 +91,7 @@ img {
   text-transform: uppercase;
   transition: 0.5s;
 }
-
+/* Button animation when rolled over */
 #btn-roll:hover {
   background-position: right center;
   /* change the direction of the change here */
